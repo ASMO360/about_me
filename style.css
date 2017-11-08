@@ -1,5 +1,6 @@
 body {
   background-color:#f7f7f4;
+  /*background-image: url(https://lh3.googleusercontent.com/LnwevRtmDUlnoEke19xd4CLUtUTKq1-wfbzQ28ozKDrxTeWqAte-hGeDuisZxIAFDVb4-di0gnS_tbu4ldulzunxV3-Bg-i5Ahu3yVOoQ_7IYRUU8OkpmjZ5cWJYm7ETqhFrTLzBnbY1gvgWHubfji8j89eMUTbB0qSQSsY3MbPyxSSA0ilfWVBuBsoaD-v5PpzZycvT_g0Lxezi_niS7KkuN6F0Ap-wp1UrLmfD8mEqG-Ojj4oH_0BqsRuoDcsnClZ4GnPf3lYMWgWDlpfGESm7G3TTQkhuDTcClX6qiT4a1VyKlqiTVAXG1gunB7P8oXEGuIGPqITnjYjzfZD4veHgzKJ3TePJiMfoXkiBHXqE6zbr9KdIVSJB1QTCywcMUAhrc3ZrC6U9QFwOTDIeeQTcGDCDcgSyLzec8VXET1SYf9-vTx7fuEUnnqJ1_UA11VlhoSRDWInuAgXvn3za4awcbPmObn-ar8CCwm3N1YrnZ67udFGTckbjIlCLEr9T-WXkCuilfauS8CbgjKYt01XG8KZOD1e2OgLUuBk-Dj6OibUzKh4gjszXbuezb4XVVpFQ8OM6DovQpEAh5SSDZuHzG76wPwtL96CoiwjFgw=w609-h812-no);*/
 }
 
 Header {
@@ -11,13 +12,16 @@ Header {
   padding: 10px;
 }
 
-p{
+#subtitle{
   font-size: 12px;
 }
 
 main {
-  font-size: 12px;
+  color: #cc3900;
+  font-size: 20px;
   font-family:sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px #000000
 }
 
 footer {

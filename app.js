@@ -10,7 +10,7 @@ var baseballAnswer = baseball.toLowerCase();
 if (baseballAnswer === 'yes' || baseballAnswer === 'y') {
   alert('You are correct! Josh was a Little League Umpire for his son\'s little league');
   } else{
-    alert('Josh was a Little League Umpire for his son\'s little league');
+    alert('Suprise, Josh was a Little League Umpire for his son\'s little league');
     }
 
 var kids = prompt('Does Joshua have 4 kids ranging from 6 months old to 19 years old?');
@@ -40,7 +40,7 @@ var firewoodAnswer = firewood.toLowerCase();
 if (firewoodAnswer ==='yes' || firewoodAnswer ==='y') {
   alert('Yep! Josh stacked his grandfather\'s firewood 3 summers in a row.');
   } else{
-  alert('incorrect');
+  alert('sorry \n that is incorrect');
   }
 
 var ua = prompt('Is Joshua Fredrickson\'s nickname UA?');
