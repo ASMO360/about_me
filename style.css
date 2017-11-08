@@ -1,0 +1,29 @@
+body {
+  background-color:#f7f7f4;
+}
+
+Header {
+  background-color: #041126;
+  text-align: center;
+  color:white;
+  font-family:monospace;
+  font-size: 16px;
+  padding: 10px;
+}
+
+p{
+  font-size: 12px;
+}
+
+main {
+  font-size: 12px;
+  font-family:sans-serif;
+}
+
+footer {
+  background-color: #041126;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  padding: 5px;
+}
