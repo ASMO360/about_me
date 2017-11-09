@@ -57,6 +57,7 @@ if (uaAnswer === 'yes' || uaAnswer === 'y') {
 var countdown = 1;
 while(countdown < 4) {
   //creating a while loop so the if/else question can repeat!
+  //Thanks to Scott McCoy for the help working this out!
   var years = prompt('Guess the shortest amount of time Joshua has been employed in his adult life?  between 1-5');
   if(years === '4') {
     console.log('if', years);
@@ -82,6 +83,7 @@ for(var i = 0; i <6; i++) {
   var userAnswer = prompt((i + 1) + 'of 6 questions \n Name an animal Joshua has owned?').toLowerCase();
   console.log(userAnswer);
   //creating a second loop to check if the user wrote a correct answer
+  //Thanks to Liberty M. for the assist with the 2nd loop
   for(j= 0; j < animals.length; j++){
     if(userAnswer === animals[j]) {
       console.log('correct animal');
