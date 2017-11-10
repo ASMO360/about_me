@@ -73,28 +73,30 @@ function questionFive() {
 
 questionFive();
 
-
-//question 6
-var countdown = 1;
-while(countdown < 4) {
+function questionSix() {
+  var countdown = 1;
+  while(countdown < 4) {
   //creating a while loop so the if/else question can repeat!
   //Thanks to Scott McCoy for the help working this out!
-  var years = prompt('Guess the shortest amount of time Joshua has been employed in his adult life?  between 1-5');
-  if(years === '4') {
-    console.log('if', years);
-    console.log('correctAnswer');
-    break;
-  }else{
-    if(years < 4){
-      alert('your answers was too low');
-    }else {
-      alert('your answer was too high');
+    var years = prompt('Guess the shortest amount of time Joshua has been employed in his adult life?  between 1-5');
+    if(years === '4') {
+      console.log('if', years);
+      console.log('correctAnswer');
+      break;
+    } else {
+      if(years < 4){
+        alert('your answers was too low');
+      } else {
+        alert('your answer was too high');
+      }
+      console.log('while', years);
+      console.log('wrong answer');
+      countdown++;
     }
-    console.log('while', years);
-    console.log('wrong answer');
-    countdown++;
   }
 }
+
+questionSix();
 
 //question 7
 var animals = ['cat', 'dog', 'fish', 'bird', 'horse', 'cow',];
