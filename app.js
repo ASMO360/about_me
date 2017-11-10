@@ -31,16 +31,19 @@ function questionTwo() {
 
 questionTwo();
 
-
-var seatown = prompt('Did Josh come from Northern California?');
-console.log('question3', seatown);
-var seatownAnswer = seatown.toLowerCase();
-console.log('answer3', seatownAnswer);
-if (seatownAnswer === 'no' || seatownAnswer === 'n') {
-  alert('You are correct, Josh has lived in the Seattle area all of his life.');
-} else{
-  alert('Oh No!  Josh has lived in the Seattle area all of his life.');
+function questionThree() {
+  var seatown = prompt('Did Josh come from Northern California?');
+  console.log('question3', seatown);
+  var seatownAnswer = seatown.toLowerCase();
+  console.log('answer3', seatownAnswer);
+  if (seatownAnswer === 'no' || seatownAnswer === 'n') {
+    alert('You are correct, Josh has lived in the Seattle area all of his life.');
+  } else {
+    alert('Oh No!  Josh has lived in the Seattle area all of his life.');
+  }
 }
+
+questionThree();
 
 var firewood = prompt('Was Josh\'s first job stacking 100 cords of firewood for his grandfather?');
 console.log('question4',firewood );
