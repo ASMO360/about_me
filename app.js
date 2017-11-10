@@ -59,15 +59,20 @@ function questionFour() {
 
 questionFour();
 
-var ua = prompt('Is Joshua Fredrickson\'s nickname UA?');
-console.log('question5', ua);
-var uaAnswer = ua.toLowerCase();
-console.log('answer5', uaAnswer);
-if (uaAnswer === 'yes' || uaAnswer === 'y') {
-  alert('Yep! Josh\'s nickname is UA');
-} else{
-  alert('incorrect \n Josh\'s nickname is UA');
+function questionFive() {
+  var ua = prompt('Is Joshua Fredrickson\'s nickname UA?');
+  console.log('question5', ua);
+  var uaAnswer = ua.toLowerCase();
+  console.log('answer5', uaAnswer);
+  if (uaAnswer === 'yes' || uaAnswer === 'y') {
+    alert('Yep! Josh\'s nickname is UA');
+  } else {
+    alert('incorrect \n Josh\'s nickname is UA');
+  }
 }
+
+questionFive();
+
 
 //question 6
 var countdown = 1;
