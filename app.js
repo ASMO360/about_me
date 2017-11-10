@@ -15,8 +15,7 @@ function questionOne () {
   }
 }
 
-function questionOne()
-
+questionOne();
 
 var kids = prompt('Does Joshua have 4 kids ranging from 6 months old to 19 years old?');
 console.log('question2', kids);
