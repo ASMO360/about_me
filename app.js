@@ -3,7 +3,7 @@
 
 //Design a guessing game about you that involves FIVE yes/no questions. Be creative and fun and whimsical. Or not. It's up to you! It's your project!
 //The questions in the guessing game must require a mix of yes/no answers, and user input must accept either y/n or yes/no responses, with either .toUpperCase() or .toLowerCase() used to validate the user input and accommodate users entering all-caps Y/N or YES/NO answers, too.
-function questionOne () {
+function questionOne() {
   var baseball = prompt('Was Joshua a Little League Umpire?');
   console.log('question1', baseball);
   var baseballAnswer = baseball.toLowerCase();
@@ -17,15 +17,20 @@ function questionOne () {
 
 questionOne();
 
-var kids = prompt('Does Joshua have 4 kids ranging from 6 months old to 19 years old?');
-console.log('question2', kids);
-var kidsAnswer = kids.toLowerCase();
-console.log('answer2', kidsAnswer);
-if (kidsAnswer === 'yes' || kidsAnswer === 'y') {
-  alert('You are correct! Josh has 4 kids.');
-} else{
-  alert('Oh Snap!  Josh does have 4 kids');
+function questionTwo() {
+  var kids = prompt('Does Joshua have 4 kids ranging from 6 months old to 19 years old?');
+  console.log('question2', kids);
+  var kidsAnswer = kids.toLowerCase();
+  console.log('answer2', kidsAnswer);
+  if (kidsAnswer === 'yes' || kidsAnswer === 'y') {
+    alert('You are correct! Josh has 4 kids.');
+  } else{
+    alert('Oh Snap!  Josh does have 4 kids');
+  }
 }
+
+questionTwo();
+
 
 var seatown = prompt('Did Josh come from Northern California?');
 console.log('question3', seatown);
