@@ -45,15 +45,19 @@ function questionThree() {
 
 questionThree();
 
-var firewood = prompt('Was Josh\'s first job stacking 100 cords of firewood for his grandfather?');
-console.log('question4',firewood );
-var firewoodAnswer = firewood.toLowerCase();
-console.log('answer4', firewoodAnswer);
-if (firewoodAnswer ==='yes' || firewoodAnswer ==='y') {
-  alert('Yep! Josh stacked his grandfather\'s firewood 3 summers in a row.');
-} else{
-  alert('sorry \n that is incorrect');
+function questionFour() {
+  var firewood = prompt('Was Josh\'s first job stacking 100 cords of firewood for his grandfather?');
+  console.log('question4',firewood );
+  var firewoodAnswer = firewood.toLowerCase();
+  console.log('answer4', firewoodAnswer);
+  if (firewoodAnswer ==='yes' || firewoodAnswer ==='y') {
+    alert('Yep! Josh stacked his grandfather\'s firewood 3 summers in a row.');
+  } else {
+    alert('sorry \n that is incorrect');
+  }
 }
+
+questionFour();
 
 var ua = prompt('Is Joshua Fredrickson\'s nickname UA?');
 console.log('question5', ua);
