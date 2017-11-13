@@ -1,6 +1,5 @@
 body {
-  background-color:#f7f7f4;
-  /*background-image: url(https://lh3.googleusercontent.com/LnwevRtmDUlnoEke19xd4CLUtUTKq1-wfbzQ28ozKDrxTeWqAte-hGeDuisZxIAFDVb4-di0gnS_tbu4ldulzunxV3-Bg-i5Ahu3yVOoQ_7IYRUU8OkpmjZ5cWJYm7ETqhFrTLzBnbY1gvgWHubfji8j89eMUTbB0qSQSsY3MbPyxSSA0ilfWVBuBsoaD-v5PpzZycvT_g0Lxezi_niS7KkuN6F0Ap-wp1UrLmfD8mEqG-Ojj4oH_0BqsRuoDcsnClZ4GnPf3lYMWgWDlpfGESm7G3TTQkhuDTcClX6qiT4a1VyKlqiTVAXG1gunB7P8oXEGuIGPqITnjYjzfZD4veHgzKJ3TePJiMfoXkiBHXqE6zbr9KdIVSJB1QTCywcMUAhrc3ZrC6U9QFwOTDIeeQTcGDCDcgSyLzec8VXET1SYf9-vTx7fuEUnnqJ1_UA11VlhoSRDWInuAgXvn3za4awcbPmObn-ar8CCwm3N1YrnZ67udFGTckbjIlCLEr9T-WXkCuilfauS8CbgjKYt01XG8KZOD1e2OgLUuBk-Dj6OibUzKh4gjszXbuezb4XVVpFQ8OM6DovQpEAh5SSDZuHzG76wPwtL96CoiwjFgw=w609-h812-no);*/
+  background-color:#555;
 }
 
 Header {
@@ -10,6 +9,7 @@ Header {
   font-family:monospace;
   font-size: 16px;
   padding: 10px;
+  z-index: 10;
 }
 
 #subtitle{
@@ -17,11 +17,30 @@ Header {
 }
 
 main {
-  color: #cc3900;
+  margin-left: 10%;
+  margin-right: 40%;
+  color: #f93a00;
   font-size: 20px;
   font-family:sans-serif;
   font-weight: bold;
-  text-shadow: 1px 1px #000000
+  text-shadow: 2px 2px #000000;
+}
+q {
+  padding-top: 20%;
+}
+
+
+aside {
+  margin-left: 80%;
+  margin-bottom: 50%;
+  padding: 10px;
+  background-color: #041126;
+  color: white;
+}
+
+p {
+  margin-right: 30%;
+  margin-left: 10%;
 }
 
 footer {

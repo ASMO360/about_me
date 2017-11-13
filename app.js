@@ -114,7 +114,7 @@ function questionSeven() {
   for(var i = 0; i < 6; i++) {
     var animals = ['cat', 'dog', 'fish', 'bird', 'horse', 'cow',];
     //this is the inital loop to prompt the user
-    var userAnswer = prompt((i + 1) + 'of 6 questions \n Name an animal Joshua has owned?').toLowerCase();
+    var userAnswer = prompt((i + 1) + ' of 6 questions \n Name an animal Joshua has owned?').toLowerCase();
     console.log(userAnswer);
     if(animals.includes(userAnswer)) {
       console.log('correct animal');
