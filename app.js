@@ -111,23 +111,18 @@ function questionSix() {
 questionSix();
 
 function questionSeven() {
-  var animals = ['cat', 'dog', 'fish', 'bird', 'horse', 'cow',];
-  var j = 0;
   for(var i = 0; i < 6; i++) {
-  //this is the inital loop to prompt the user
+    var animals = ['cat', 'dog', 'fish', 'bird', 'horse', 'cow',];
+    //this is the inital loop to prompt the user
     var userAnswer = prompt((i + 1) + 'of 6 questions \n Name an animal Joshua has owned?').toLowerCase();
     console.log(userAnswer);
-    //creating a second loop to check if the user wrote a correct answer
-    //Thanks to Liberty M. for the assist with the 2nd loop
-    for(j = 0; j < animals.length; j++){
-      if(userAnswer === animals[j]) {
-        console.log('correct animal');
-        //this alert lists out the animals
-        alert('you were correct! \n here all of the animals Josh owned: ' + animals.toString());
-        break;
-      } else {
-        console.log('array loop check for animals var');
-      }
+    if(animals.includes(userAnswer)) {
+      console.log('correct animal');
+      alert('You are correct! \n Here all of the animals Josh owned: ' + animals.toString());
+      score++;
+      break;
+    } else {
+      console.log('wrong answer7');
     }
   }
 }
@@ -135,7 +130,4 @@ function questionSeven() {
 questionSeven();
 
 
-
-
-
-//comment
+alert('Congratulations!  \n ' + userName + ', you had ' + score + ' correct anwsers out of 7 questions.');
