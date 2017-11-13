@@ -3,15 +3,22 @@
 
 //Design a guessing game about you that involves FIVE yes/no questions. Be creative and fun and whimsical. Or not. It's up to you! It's your project!
 //The questions in the guessing game must require a mix of yes/no answers, and user input must accept either y/n or yes/no responses, with either .toUpperCase() or .toLowerCase() used to validate the user input and accommodate users entering all-caps Y/N or YES/NO answers, too.
+var score = 0;
+
+var userName = prompt('Greetings and Salutations!  \n Welcome to Joshua Fredrickson\'s website.  Could you kindly enter your name at the prompt?');
+
+
+
 function questionOne() {
   var baseball = prompt('Was Joshua a Little League Umpire?');
   console.log('question1', baseball);
   var baseballAnswer = baseball.toLowerCase();
   console.log('answer1', baseballAnswer);
   if (baseballAnswer === 'yes' || baseballAnswer === 'y') {
-    alert('You are correct! Josh was a Little League Umpire for his son\'s little league');
+    alert(userName + '! You are correct! Josh was a Little League Umpire for his son\'s little league');
+    score++;
   } else{
-    alert('Suprise, Josh was a Little League Umpire for his son\'s little league');
+    alert('Well ' + userName + ', Josh was a Little League Umpire for his son\'s little league');
   }
 }
 
@@ -24,6 +31,7 @@ function questionTwo() {
   console.log('answer2', kidsAnswer);
   if (kidsAnswer === 'yes' || kidsAnswer === 'y') {
     alert('You are correct! Josh has 4 kids.');
+    score++;
   } else{
     alert('Oh Snap!  Josh does have 4 kids');
   }
@@ -38,6 +46,7 @@ function questionThree() {
   console.log('answer3', seatownAnswer);
   if (seatownAnswer === 'no' || seatownAnswer === 'n') {
     alert('You are correct, Josh has lived in the Seattle area all of his life.');
+    score++;
   } else {
     alert('Oh No!  Josh has lived in the Seattle area all of his life.');
   }
@@ -50,8 +59,9 @@ function questionFour() {
   console.log('question4',firewood );
   var firewoodAnswer = firewood.toLowerCase();
   console.log('answer4', firewoodAnswer);
-  if (firewoodAnswer ==='yes' || firewoodAnswer ==='y') {
+  if (firewoodAnswer === 'yes' || firewoodAnswer === 'y') {
     alert('Yep! Josh stacked his grandfather\'s firewood 3 summers in a row.');
+    score++;
   } else {
     alert('sorry \n that is incorrect');
   }
@@ -66,6 +76,7 @@ function questionFive() {
   console.log('answer5', uaAnswer);
   if (uaAnswer === 'yes' || uaAnswer === 'y') {
     alert('Yep! Josh\'s nickname is UA');
+    score++;
   } else {
     alert('incorrect \n Josh\'s nickname is UA');
   }
@@ -78,14 +89,15 @@ function questionSix() {
   while(countdown < 4) {
   //creating a while loop so the if/else question can repeat!
   //Thanks to Scott McCoy for the help working this out!
-    var years = prompt('Guess the shortest amount of time Joshua has been employed in his adult life?  between 1-5');
+    var years = prompt('Guess the shortest amount of time Joshua has been employed in his adult life?  between 1-5.  Choose wisely, you only have ' + (4 - countdown) + ' chances left.');
     if(years === '4') {
       console.log('if', years);
       console.log('correctAnswer');
+      score++;
       break;
     } else {
       if(years < 4){
-        alert('your answers was too low');
+        alert('your answers was too low.');
       } else {
         alert('your answer was too high');
       }
@@ -101,16 +113,16 @@ questionSix();
 function questionSeven() {
   var animals = ['cat', 'dog', 'fish', 'bird', 'horse', 'cow',];
   var j = 0;
-  for(var i = 0; i <6; i++) {
+  for(var i = 0; i < 6; i++) {
   //this is the inital loop to prompt the user
     var userAnswer = prompt((i + 1) + 'of 6 questions \n Name an animal Joshua has owned?').toLowerCase();
     console.log(userAnswer);
-  //creating a second loop to check if the user wrote a correct answer
-  //Thanks to Liberty M. for the assist with the 2nd loop
-    for(j= 0; j < animals.length; j++){
+    //creating a second loop to check if the user wrote a correct answer
+    //Thanks to Liberty M. for the assist with the 2nd loop
+    for(j = 0; j < animals.length; j++){
       if(userAnswer === animals[j]) {
         console.log('correct animal');
-      //this alert lists out the animals
+        //this alert lists out the animals
         alert('you were correct! \n here all of the animals Josh owned: ' + animals.toString());
         break;
       } else {
